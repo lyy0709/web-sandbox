@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web-sandbox:
+    image: lyy0709/web-sandbox:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web-sandbox
+    ports:
+      - "3709:80"
